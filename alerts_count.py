@@ -87,6 +87,7 @@ print('Total Acknowledgement Alerts ~~~~~~~~~~~> ' + str(alert_count))
 charging_list = [
     ['Controller', 'offline (last seen at'],
     ['Controller', 'chargers in error or offline']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 charging_title = (f"\n" * 3 + "~" * 60 + " Charging (Controller & Chargers/Connectors) " + "~" * 67 + "\n")
 
@@ -107,6 +108,7 @@ de_alerts = [
     ['General error safety contact',],
     ['AC grid undervoltage shutdown'],
     ['AC grid overvoltage shutdown']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 fire_alarts = [
     ['Facility: Fire detection triggered'],
@@ -114,6 +116,7 @@ fire_alarts = [
     ['Facility: Grid- and system protection triggered'],
     ['Facility: Power failure'],
     ['Emergency Stop triggered for this system']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 critical_storage = [
     ['DC source missing', 'undervoltage intermediate circuit'],
@@ -138,6 +141,7 @@ critical_storage = [
     ['Filter charge contactor stuck'],
     ['Battery CAN connexion failure'],
     ['AC gird overload']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 
 german_grid = (
@@ -158,6 +162,7 @@ amsterdam_grid_alerts = [
     ['Critical storage error The storage system reports a critical storage error. Please contact the hardware supplie'],
     ['Storage power response incorrect Storage is not responding to power requests correctly'],
     ['Storage System Error', 'Please call Eaton if this persists']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 aa_title = (f"\n" * 3 + "~" * 71 + " Amsterdam Grid (AA Grid) " + "~" * 75 + "\n")
 
@@ -171,23 +176,28 @@ douai_controller = [
     ['has lost connection', '124ea21a09aaaf34607e9aaa2cc36c53'],
     ['has lost connection', 'a40222bd7b99ebc06a8d935b3a26fce3'],
     ['has lost connection', 'e4110f1463cbc5f40d485428a48c7976']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 douai_safety = [
     ['Tokai1_Douai', 'Safety; Estop_OBI_IN_Detection_PCS; Safe PLC (Input)'],
     ['Tokai1_Douai', 'Safety; Estop_OBI_IN_DetectFeu_Batt2; Safe PLC (Input)'],
     ['Tokai1_Douai', 'Safety; Estop_OBI_IN_PB_Interne; Safe PLC (Input)'],
     ['Tokai1_Douai', 'Safety; Estop_OBI_IN_PB_PDL; Safe PLC (Input)']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 douai_communication = [
     ['Tokai1_Douai', 'Communications; EC1_OBI_050Q1_Open; EC1 - The main auxiliary supply is open'],
     ['Tokai1_Douai', 'Communications; EC1_OBI_070Q2_Flt; EC1 - The 24 VDC supply of the TU is in fault'],
     ['Tokai1_Douai', 'Communications; TU_OBI_ComFlt; TU - At least one loss of comunication']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 douai_battery = [
     ['Tokai1_Douai', 'Battery Fault; Rack']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 douai_inverter = [
     ['Tokai1_Douai', 'Inverter Fault; With_OBI_UnexWithout; General - One Inverter has been unwilligly disconnected']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 tokai1_douai = (
     douai_controller, 
@@ -220,23 +230,28 @@ flins_controller = [
     ['has lost connection', '0ff8ad0537eb61e964112d1fd598fda2'],
     ['has lost connection', '71d2e5dbd006b9bd0208bad327dcd712'],
     ['has lost connection', '294676f52954faf3de38e65e3ca9b321']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 flins_safety = [
     ['fr_rte_tokai1_flins', 'Safety; Estop_OBI_IN_Detection_PCS; Safe PLC (Input)'],
     ['fr_rte_tokai1_flins', 'Safety; Estop_OBI_IN_DetectFeu_Batt2; Safe PLC (Input)'],
     ['fr_rte_tokai1_flins', 'Safety; Estop_OBI_IN_PB_Interne; Safe PLC (Input)'],
     ['fr_rte_tokai1_flins', 'Safety; Estop_OBI_IN_PB_PDL; Safe PLC (Input)']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 flins_communication = [
     ['fr_rte_tokai1_flins', 'Communications; EC1_OBI_050Q1_Open; EC1 - The main auxiliary supply is open'],
     ['fr_rte_tokai1_flins', 'Communications; EC1_OBI_070Q2_Flt; EC1 - The 24 VDC supply of the TU is in fault'],
     ['fr_rte_tokai1_flins', 'Communications; TU_OBI_ComFlt; TU - At least one loss of comunication']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 flins_battery = [
     ['fr_rte_tokai1_flins', 'Battery Fault; Rack']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 flins_inverter = [
     ['fr_rte_tokai1_flins', 'Inverter Fault; With_OBI_UnexWithout; General - One Inverter has been unwilligly disconnected']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 tokai1_flins = (
     flins_controller, 
@@ -264,6 +279,9 @@ tokai2_elverlingsen_alerts = [
     ['has lost connection', 'ff0ef17a6353899639cb31adcf700386'],
     ['has lost connection', 'fb28a334fb9b53e105a0c5f7bcb2d8cb'],
     ['has lost connection', '7df8ec6d0c876faed0789daeebbaa822']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
+
+    # !!! Please update here
 ]
 tokai2_title = (f"\n" * 3 + "~" * 75 + " Tokai_2_Elverlingsen (ELV) " + "~" * 75)
 
@@ -271,6 +289,7 @@ tokai2_title = (f"\n" * 3 + "~" * 75 + " Tokai_2_Elverlingsen (ELV) " + "~" * 75
 # !!! `euref` alerts list with a title. Pass this two list into the main function
 euref_storage = [
     ['“System Status” error or warning EUREF Storage']
+    # ! If need to update, do it here like, ['New alert name']. Also, don't forget to add comma on end of previous line
 ]
 euref_title = (f"\n" * 3 + "~" * 75 + " EURUF Storage " + "~" * 75)
 
@@ -294,7 +313,6 @@ prometheus = [
     ['RabbitMQ cluster in tmh.orange.arena has queue above threshold.'],
     ['Prometheus is not able to get information about rabbitmq cluster on instance rabbit_3_7_1 in production.aggregator'],
     ['Server storage of proc102 in mdex.hs.proc is almost full'],
-    ['Server storage of proc002 in mdex.bb.proc will be full in 12 hours.'],
     ['Server storage in tmh.orange.arena will be full in 12 hours'],
     ['Storage in tmh.orange.arena is almost full. Usage is'],
     ['prometheus-bridge on proc002 in mdex.bb.proc is down'],
@@ -313,18 +331,21 @@ def process_alerts(alerts_list):
     :param alerts_list: Tuple of lists, and alternatively a single list
     return: dict: A dictionary
     """
-    for data in alerts_list:
-        """
-        Creating a dictionary where the keys are tuples of items from the list, 
-        and the corresponding values are dictionaries with two keys: 'closed' and 'open
-        """
-        element_counts = {tuple(item): {'closed': 0, 'open': 0} for item in data}
-        for entry in all_ack_alerts:                                # Iterate through each entry in the 'all_ack_alerts' list
-            status = entry[1]
-            for item in data:
-                if all(keyword in entry[0] for keyword in item):    # Check if any keyword in the alert group matches the entry's name
-                    element_counts[tuple(item)][status] += 1        # Push it to `element_counts`
-    return element_counts
+    try:
+        for data in alerts_list:
+            """
+            Creating a dictionary where the keys are tuples of items from the list, 
+            and the corresponding values are dictionaries with two keys: 'closed' and 'open
+            """
+            element_counts = {tuple(item): {'closed': 0, 'open': 0} for item in data}
+            for entry in all_ack_alerts:                                # Iterate through each entry in the 'all_ack_alerts' list
+                status = entry[1]
+                for item in data:
+                    if all(keyword in entry[0] for keyword in item):    # Check if any keyword in the alert group matches the entry's name
+                        element_counts[tuple(item)][status] += 1        # Push it to `element_counts`
+        return element_counts
+    except Exception as error:
+        print(f"An exception flew by! {error}")
 
 def print_alerts(alerts_counts):
     """
